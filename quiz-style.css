@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier', monospace;
+    background: linear-gradient(135deg, #1f2f4d, hsl(212, 28%, 27%));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Centered Container */
+.container {
+    text-align: center;
+    background: rgb(235, 245, 247);
+    color: #2e363a;
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Header */
+h1, h2 {
+    margin-bottom: 20px; /* Added more spacing */
+    font-weight: bold;
+}
+
+/* Input & Button Styles */
+input {
+    padding: 12px 15px;
+    margin: 15px 0; /* Increased spacing */
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    font-family: monospace;
+    padding: 12px 20px;
+    margin-top: 15px; /* Space between buttons */
+    background: #7c9fab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #375970;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Quiz Options - Add Spacing */
+#options button {
+    display: block;
+    width: 80%;
+    padding: 12px 15px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Correct Answer */
+.option-btn.correct {
+    background-color: green;
+    color: white;
+}
+
+/* Wrong Answer */
+.option-btn.wrong {
+    background-color: red;
+    color: white;
+}
+
+/* Disabled Buttons */
+.option-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Space Between Sections */
+section {
+    margin-bottom: 30px; /* Adds space between quiz sections */
+}
+
+/* Pie Chart Styling */
+canvas {
+    margin-top: 20px; /* Adds space above the pie chart */
+}

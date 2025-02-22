@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Quiz</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="quiz-style.css">
+
+    <!-- Include Chart.js for Pie Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Include JavaScript -->
+    <script src="itquizejs.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Section -->
+        <section id="registration">
+            <h1>Welcome to the IT Quiz!</h1>
+            <p>Enter your name and click "Start" to begin:</p>
+            <input type="text" id="participantName" placeholder="Enter your name" />
+            <button onclick="startQuiz()">Start</button>
+
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="hidden">
+            <h2 id="quizTitle">Quiz Time!</h2>
+            <p id="question"></p>
+            <div id="options"></div>
+            <button onclick="nextQuestion()" class="btn hidden" id="nextBtn">Next</button>
+        </section>
+
+        <!-- Result Section -->
+        <section id="result" class="hidden">
+            <h2>Thank You!</h2>
+            <p id="resultText"></p>
+            <button onclick="retakeQuiz()">Retake Quiz</button>
+
+            <!-- Pie Chart -->
+            <canvas id="scoreChart" width="300" height="300"></canvas>
+
+        </section>
+    </div>
+    <!-- Result Section -->
+<section id="result" class="hidden">
+    <h2>Thank You!</h2>
+    <p id="resultText"></p>
+    <canvas id="scoreChart"></canvas> <!-- Pie Chart Canvas -->
+    <button onclick="retakeQuiz()">Retake Quiz</button>
+</section>
+
+
+</body>
+</html>
