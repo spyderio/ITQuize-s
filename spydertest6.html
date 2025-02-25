@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="quiz-style.css">
 
     <!-- Include Chart.js for Pie Chart -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
     <!-- Include JavaScript -->
     <script src="itquizejs.js" defer></script>
@@ -23,9 +24,12 @@
         <!-- Registration Section -->
         <section id="registration">
             <h1>Welcome to the IT Quiz!</h1>
-            <p>Enter your name and click "Start" to begin:</p>
+            <p><b>Test your IT knowledge with these 10 questions we have prepared for you<b></p>
+            <p><b></b>Enter your name and click "Start" to begin:)<b></p>
             <input type="text" id="participantName" placeholder="Enter your name" />
             <button onclick="startQuiz()">Start</button>
+            <br></br>
+            <p>done by Ruhama.D and Ahlam.Z</p>
 
         </section>
 
@@ -37,21 +41,23 @@
             <button onclick="nextQuestion()" class="btn hidden" id="nextBtn">Next</button>
         </section>
 
-        <!-- Result Section -->
-        <section id="result" class="hidden">
-            <h2>Thank You!</h2>
-            <p id="resultText"></p>
-            <button onclick="retakeQuiz()">Retake Quiz</button>
+      <!-- Result Section -->
+      <section id="result" class="hidden">
+        <p id="resultText"></p>
+        <p>Here is a pie chart of the proportions of participants' scores who took this quize.</p>
+        <button onclick="retakeQuiz()">Retake Quiz</button>
 
-            <!-- Pie Chart -->
-            <canvas id="scoreChart" width="300" height="300"></canvas>
+        <!-- Pie Chart -->
+        <canvas id="scoreChart" width="300" height="300"></canvas>
 
-        </section>
+    </section>
+</div>
     </div>
     <!-- Result Section -->
 <section id="result" class="hidden">
     <h2>Thank You!</h2>
     <p id="resultText"></p>
+    
     <canvas id="scoreChart"></canvas> <!-- Pie Chart Canvas -->
     <button onclick="retakeQuiz()">Retake Quiz</button>
 </section>
@@ -59,3 +65,5 @@
 
 </body>
 </html>
+
+                
