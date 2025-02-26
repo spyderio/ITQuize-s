@@ -4,13 +4,13 @@ const questions = [
     { question: "What does HTML stand for?", options: [ "Home Tool Markup Language", "HyperText Markup Language", "Hyperlinks and Text Markup Language"], answer: 1 },
   
     { question: "What does CSS stand for?", options: ["Cascading Style Sheets", "Creative Style Sheets", "Computer Style System"], answer: 0 },
-    { question: "What does CPU syand for?", options: ["Central Processing Unit", "Computer Programming Utility", "Central Program Unit"], answer: 0 },
+    { question: "What does CPU stand for?", options: ["Central Processing Unit", "Computer Programming Utility", "Central Program Unit"], answer: 0 },
     { question: "Which of the following is NOT an operating system?", options: ["Windows", "Andriod", "JavaScript"], answer: 2 },
 
     { question: "What is the computer's brain?", options: ["CPU", "RAM", "Hard Drive"], answer: 0 },
     { question: "What does Wi-Fi stand for?", options: ["Wireless Fidelity", "Wide Windows", "Wide Fast Internet"], answer: 0  },
     { question: "What is a website address called?", options: ["HTML", "IP", "URL"], answer: 2 },
-    { question: "Which is used to store files?", options: ["Mouse","Hard Drive", "Keyboard"], answer: 1 }
+    { question: "What is used to store files?", options: ["Mouse","Hard Drive", "Keyboard"], answer: 1 }
       
       
 ];
